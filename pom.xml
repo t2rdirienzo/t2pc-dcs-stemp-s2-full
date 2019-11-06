@@ -48,12 +48,33 @@
 								</goals>
 								<configuration>
 									<!-- Set here the dependencies installed with 'sudo yum install'-->
+									<defineStatements>
+										<defineStatement>_unpackaged_files_terminate_build 0</defineStatement>
+									</defineStatements>
+
+
 									<requires>
 										<require>idl</require>
 										<require>miniconda</require>
 										<require>libgeotiff</require>
 										<require>STEMP-S2</require>
 									</requires>
+
+									<mappings combine.children="append">
+										<mapping>
+											<directory>/application/dependencies/python/</directory>
+											<sources>
+												<source>
+													<location>${basedir}/src/main/app-resources/dependencies/python/environment.yml</location>
+												</source>
+											</sources>
+										</mapping>
+									</mappings>
+									<postinstallScriptlet combine.children="append">
+										<script>conda update conda -y &amp;&amp; conda env create --file=/application/dependencies/python/environment.yml</script>
+									</postinstallScriptlet>
+
+
 								</configuration>
 							</execution>
 						</executions>
