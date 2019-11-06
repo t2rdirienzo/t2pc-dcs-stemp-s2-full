@@ -50,12 +50,9 @@
 		
 
 
-									<requires>
-										<require>idl</require>
-										<require>miniconda</require>
-										<require>libgeotiff</require>
-										<require>STEMP-S2</require>
-									</requires>
+									<requires />
+										 
+								 
 
 
 
