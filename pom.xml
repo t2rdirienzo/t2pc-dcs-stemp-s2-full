@@ -48,9 +48,9 @@
 								</goals>
 								<configuration>
 									<!-- Set here the dependencies installed with 'sudo yum install'-->
-									<defineStatements>
+									<!-- <defineStatements>
 										<defineStatement>_unpackaged_files_terminate_build 0</defineStatement>
-									</defineStatements>
+									</defineStatements> -->
 
 
 									<requires>
@@ -60,7 +60,7 @@
 										<require>STEMP-S2</require>
 									</requires>
 
-									<mappings combine.children="append">
+									<!-- <mappings combine.children="append">
 										<mapping>
 											<directory>/application/dependencies/python/</directory>
 											<sources>
@@ -72,7 +72,7 @@
 									</mappings>
 									<postinstallScriptlet combine.children="append">
 										<script>conda update conda -y &amp;&amp; conda env create --file=/application/dependencies/python/environment.yml</script>
-									</postinstallScriptlet>
+									</postinstallScriptlet> -->
 
 
 								</configuration>
