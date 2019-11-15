@@ -8,6 +8,6 @@ do
   echo "$line" >> ${FILE}
 done < "${1:-/dev/stdin}"
 
-ciop-publish ${FILE}
+ciop-publish -m ${FILE}
 
 

@@ -2,7 +2,7 @@
 <application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="application">
   <jobTemplates>
     <jobTemplate id="stemp">
-      <streamingExecutable>/bin/cat</streamingExecutable>
+      <streamingExecutable>/application/rdr/rdr.sh</streamingExecutable>
       <defaultJobconf>
         <property id="mapred.task.timeout">3600000</property>
       </defaultJobconf>
