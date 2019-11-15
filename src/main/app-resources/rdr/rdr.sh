@@ -1,5 +1,8 @@
 
 FILE=/tmp/${$}.txt
+
+echo "START" > ${FILE}
+
 while read line
 do
   echo "$line" >> ${FILE}
