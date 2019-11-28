@@ -9,7 +9,7 @@
     </jobTemplate>
   </jobTemplates>
   <workflow id="dcs-stemp-s2-full" title="STEMP-S2 Full" abstract="ERUPTIVE HOT SPOT detection obtained by multi-spectral optical sensors (Sentinel-2 ) generated in GeoTIFF format">
-    <workflowVersion>1.0</workflowVersion>
+    <workflowVersion>2.0</workflowVersion>
     <node id="node-stemp">
       <job id="stemp"/>
       <sources>
