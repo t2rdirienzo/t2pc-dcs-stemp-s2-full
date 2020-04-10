@@ -8,7 +8,7 @@
 	<name>dcs-stemp-s2-full</name>
 	<parent>
 		<groupId>t2.t2pc</groupId>
-		<artifactId>dcs-t2pc</artifactId>
+		<artifactId>ewf-t2pc</artifactId>
 		<version>1.0.0</version>
 	</parent>
 
